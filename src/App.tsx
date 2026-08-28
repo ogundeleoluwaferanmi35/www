@@ -33,6 +33,7 @@ const Grants = lazy(() => import('./pages/Grants'));
 const CaseStudies = lazy(() => import('./pages/CaseStudies'));
 const Careers = lazy(() => import('./pages/Careers'));
 const About = lazy(() => import('./pages/About'));
+const Governance = lazy(() => import('./pages/Governance'));
 const Vitals = lazy(() => import('./pages/Vitals'));
 const Security = lazy(() => import('./pages/Security'));
 const Status = lazy(() => import('./pages/Status'));
@@ -130,14 +131,8 @@ export default function App() {
                 </Layout>
               }
             />
-            <Route
-              path="/about"
-              element={
-                <Layout>
-                  <About />
-                </Layout>
-              }
-            />
+            <Route path="/about" element={<Layout><About /></Layout>} />
+            <Route path="/governance" element={<Layout><Governance /></Layout>} />
             <Route
               path="/contributors"
               element={
@@ -185,3 +180,4 @@ export default function App() {
     </ThemeProvider>
   );
 }
+
