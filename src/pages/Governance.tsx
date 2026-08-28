@@ -1,4 +1,3 @@
-import React from 'react';
 import teamData from '../data/team.json';
 import optOutData from '../data/contributors-optout.json';
 import { Link } from 'react-router-dom';
@@ -75,3 +74,4 @@ export default function Governance() {
     </div>
   );
 }
+
