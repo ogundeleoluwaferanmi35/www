@@ -131,8 +131,22 @@ export default function App() {
                 </Layout>
               }
             />
-            <Route path="/about" element={<Layout><About /></Layout>} />
-            <Route path="/governance" element={<Layout><Governance /></Layout>} />
+            <Route
+              path="/about"
+              element={
+                <Layout>
+                  <About />
+                </Layout>
+              }
+            />
+            <Route
+              path="/governance"
+              element={
+                <Layout>
+                  <Governance />
+                </Layout>
+              }
+            />
             <Route
               path="/contributors"
               element={
@@ -180,4 +194,3 @@ export default function App() {
     </ThemeProvider>
   );
 }
-
